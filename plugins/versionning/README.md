@@ -1,11 +1,11 @@
-# conventional-commit
+# versionning
 
 Génère des messages de commit conformes à la spécification [Conventional Commits](https://www.conventionalcommits.org/fr/) à partir des fichiers **déjà stagés**.
 
 ## Commande
 
 ```shell
-/conventional-commit:conventional-commit
+/versionning:conventional-commit
 ```
 
 Ce skill est aussi **invocable automatiquement** : il se déclenche dès que vous demandez à Claude de « faire un commit » ou de « committer ».
@@ -23,5 +23,5 @@ Si rien n'est stagé, il s'arrête et le signale.
 ## Installation
 
 ```shell
-/plugin install conventional-commit@dev-workflow
+/plugin install versionning@dev-workflow
 ```

@@ -9,7 +9,7 @@ Ajoutez la marketplace, puis installez les plugins voulus :
 ```shell
 /plugin marketplace add gitMax18/dev-workflow-plugins
 /plugin install spec-driven@dev-workflow
-/plugin install conventional-commit@dev-workflow
+/plugin install versionning@dev-workflow
 ```
 
 Pour mettre à jour la marketplace après une nouvelle version :
@@ -23,7 +23,7 @@ Pour mettre à jour la marketplace après une nouvelle version :
 | Plugin | Description | Commandes |
 | :----- | :---------- | :-------- |
 | [`spec-driven`](plugins/spec-driven) | Cycle spec → plan → implement | `/spec-driven:spec`, `/spec-driven:plan`, `/spec-driven:implement` |
-| [`conventional-commit`](plugins/conventional-commit) | Messages de commit Conventional Commits | `/conventional-commit:conventional-commit` |
+| [`versionning`](plugins/versionning) | Messages de commit Conventional Commits | `/versionning:conventional-commit` |
 
 > Les skills de plugin sont **namespacés** par le nom du plugin pour éviter les collisions.
 
@@ -57,7 +57,7 @@ Après modification d'un plugin chargé, recharger sans redémarrer :
     ├── spec-driven/
     │   ├── .claude-plugin/plugin.json
     │   └── skills/{spec,plan,implement}/SKILL.md
-    └── conventional-commit/
+    └── versionning/
         ├── .claude-plugin/plugin.json
         └── skills/conventional-commit/SKILL.md
 ```

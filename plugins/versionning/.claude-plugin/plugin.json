@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin.json",
-  "name": "conventional-commit",
+  "name": "versionning",
   "description": "Génère des messages de commit conformes à la spécification Conventional Commits à partir des fichiers stagés (type, scope, breaking change).",
   "version": "1.0.0",
   "author": {
@@ -8,7 +8,7 @@
     "email": "jean.maxime0988@gmail.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/gitMax18/dev-workflow-plugins/tree/main/plugins/conventional-commit",
+  "homepage": "https://github.com/gitMax18/dev-workflow-plugins/tree/main/plugins/versionning",
   "repository": "https://github.com/gitMax18/dev-workflow-plugins",
   "keywords": ["git", "commit", "conventional-commits"]
 }

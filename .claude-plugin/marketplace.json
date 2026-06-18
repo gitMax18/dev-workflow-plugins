@@ -22,8 +22,8 @@
       "tags": ["spec", "plan", "implement"]
     },
     {
-      "name": "conventional-commit",
-      "source": "./plugins/conventional-commit",
+      "name": "versionning",
+      "source": "./plugins/versionning",
       "description": "Génère des messages de commit conformes à la spécification Conventional Commits à partir des fichiers stagés (type, scope, breaking change).",
       "version": "1.0.0",
       "author": {
