@@ -7,12 +7,10 @@ Marketplace de plugins [Claude Code](https://code.claude.com/docs/en/plugins) po
 Ajoutez la marketplace, puis installez les plugins voulus :
 
 ```shell
-/plugin marketplace add maxime/dev-workflow-plugins
+/plugin marketplace add gitMax18/dev-workflow-plugins
 /plugin install spec-driven@dev-workflow
 /plugin install conventional-commit@dev-workflow
 ```
-
-> Remplacez `maxime/dev-workflow-plugins` par votre `owner/repo` GitHub réel.
 
 Pour mettre à jour la marketplace après une nouvelle version :
 

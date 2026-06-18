@@ -8,5 +8,7 @@
     "email": "jean.maxime0988@gmail.com"
   },
   "license": "MIT",
+  "homepage": "https://github.com/gitMax18/dev-workflow-plugins/tree/main/plugins/conventional-commit",
+  "repository": "https://github.com/gitMax18/dev-workflow-plugins",
   "keywords": ["git", "commit", "conventional-commits"]
 }

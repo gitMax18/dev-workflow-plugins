@@ -8,5 +8,7 @@
     "email": "jean.maxime0988@gmail.com"
   },
   "license": "MIT",
+  "homepage": "https://github.com/gitMax18/dev-workflow-plugins/tree/main/plugins/spec-driven",
+  "repository": "https://github.com/gitMax18/dev-workflow-plugins",
   "keywords": ["spec-driven", "planning", "implementation", "workflow"]
 }
