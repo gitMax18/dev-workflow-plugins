@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "dev-workflow",
+  "owner": {
+    "name": "Maxime Jean",
+    "email": "jean.maxime0988@gmail.com"
+  },
+  "description": "Plugins de workflow de développement pour Claude Code : cycle spec-driven (spec → plan → implement) et commits conventionnels.",
+  "plugins": [
+    {
+      "name": "spec-driven",
+      "source": "./plugins/spec-driven",
+      "description": "Cycle spec-driven complet : /spec définit le besoin, /plan le traduit en plan technique, /implement réalise le code. Specs et plans versionnés dans _specs/ et _plans/.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Maxime Jean",
+        "email": "jean.maxime0988@gmail.com"
+      },
+      "license": "MIT",
+      "category": "workflow",
+      "keywords": ["spec-driven", "planning", "implementation", "workflow", "tdd"],
+      "tags": ["spec", "plan", "implement"]
+    },
+    {
+      "name": "conventional-commit",
+      "source": "./plugins/conventional-commit",
+      "description": "Génère des messages de commit conformes à la spécification Conventional Commits à partir des fichiers stagés (type, scope, breaking change).",
+      "version": "1.0.0",
+      "author": {
+        "name": "Maxime Jean",
+        "email": "jean.maxime0988@gmail.com"
+      },
+      "license": "MIT",
+      "category": "git",
+      "keywords": ["git", "commit", "conventional-commits", "changelog"],
+      "tags": ["git", "commit"]
+    }
+  ]
+}

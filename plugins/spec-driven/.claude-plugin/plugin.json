@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "spec-driven",
+  "description": "Cycle spec-driven complet pour Claude Code : /spec définit le besoin fonctionnel, /plan le traduit en plan technique, /implement réalise le code. Specs et plans versionnés dans _specs/ et _plans/.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Maxime Jean",
+    "email": "jean.maxime0988@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["spec-driven", "planning", "implementation", "workflow"]
+}

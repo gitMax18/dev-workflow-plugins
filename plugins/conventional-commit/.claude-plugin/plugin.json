@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "conventional-commit",
+  "description": "Génère des messages de commit conformes à la spécification Conventional Commits à partir des fichiers stagés (type, scope, breaking change).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Maxime Jean",
+    "email": "jean.maxime0988@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["git", "commit", "conventional-commits"]
+}
