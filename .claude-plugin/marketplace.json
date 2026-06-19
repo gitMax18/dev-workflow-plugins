@@ -11,7 +11,7 @@
       "name": "spec-driven",
       "source": "./plugins/spec-driven",
       "description": "Cycle spec-driven complet : /spec définit le besoin, /plan le traduit en plan technique, /implement réalise le code, /review-workflow clôture le cycle (validation des specs, résumés d'implémentation, nettoyage des plans). Specs et plans versionnés dans _specs/ et _plans/.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Maxime Jean",
         "email": "jean.maxime0988@gmail.com"
