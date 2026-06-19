@@ -5,12 +5,12 @@
     "name": "Maxime Jean",
     "email": "jean.maxime0988@gmail.com"
   },
-  "description": "Plugins de workflow de développement pour Claude Code : cycle spec-driven (spec → plan → implement) et commits conventionnels.",
+  "description": "Plugins de workflow de développement pour Claude Code : cycle spec-driven (spec → plan → implement → review-workflow) et commits conventionnels.",
   "plugins": [
     {
       "name": "spec-driven",
       "source": "./plugins/spec-driven",
-      "description": "Cycle spec-driven complet : /spec définit le besoin, /plan le traduit en plan technique, /implement réalise le code. Specs et plans versionnés dans _specs/ et _plans/.",
+      "description": "Cycle spec-driven complet : /spec définit le besoin, /plan le traduit en plan technique, /implement réalise le code, /review-workflow clôture le cycle (validation des specs, résumés d'implémentation, nettoyage des plans). Specs et plans versionnés dans _specs/ et _plans/.",
       "version": "1.0.0",
       "author": {
         "name": "Maxime Jean",
@@ -19,7 +19,7 @@
       "license": "MIT",
       "category": "workflow",
       "keywords": ["spec-driven", "planning", "implementation", "workflow", "tdd"],
-      "tags": ["spec", "plan", "implement"]
+      "tags": ["spec", "plan", "implement", "review-workflow"]
     },
     {
       "name": "versionning",

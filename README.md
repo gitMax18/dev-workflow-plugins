@@ -1,6 +1,6 @@
 # dev-workflow — Marketplace de plugins Claude Code
 
-Marketplace de plugins [Claude Code](https://code.claude.com/docs/en/plugins) pour le workflow de développement : un cycle **spec-driven** complet et la génération de **commits conventionnels**.
+Marketplace de plugins [Claude Code](https://code.claude.com/docs/en/plugins) pour le workflow de développement : un cycle **spec-driven** complet (spec → plan → implement → review-workflow) et la génération de **commits conventionnels**.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Pour mettre à jour la marketplace après une nouvelle version :
 
 | Plugin | Description | Commandes |
 | :----- | :---------- | :-------- |
-| [`spec-driven`](plugins/spec-driven) | Cycle spec → plan → implement | `/spec-driven:spec`, `/spec-driven:plan`, `/spec-driven:implement` |
+| [`spec-driven`](plugins/spec-driven) | Cycle spec → plan → implement → review-workflow | `/spec-driven:spec`, `/spec-driven:plan`, `/spec-driven:implement`, `/spec-driven:review-workflow` |
 | [`versionning`](plugins/versionning) | Messages de commit Conventional Commits | `/versionning:conventional-commit` |
 
 > Les skills de plugin sont **namespacés** par le nom du plugin pour éviter les collisions.
@@ -56,7 +56,7 @@ Après modification d'un plugin chargé, recharger sans redémarrer :
 └── plugins/
     ├── spec-driven/
     │   ├── .claude-plugin/plugin.json
-    │   └── skills/{spec,plan,implement}/SKILL.md
+    │   └── skills/{spec,plan,implement,review-workflow}/SKILL.md
     └── versionning/
         ├── .claude-plugin/plugin.json
         └── skills/conventional-commit/SKILL.md
