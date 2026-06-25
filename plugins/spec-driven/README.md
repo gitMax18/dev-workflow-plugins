@@ -6,6 +6,10 @@ Cycle de développement **spec-driven** pour Claude Code : du besoin fonctionnel
 /spec      →     /plan      →     /implement     →     /review-workflow
 (le QUOI)      (le COMMENT)      (le code)              (la clôture)
 _specs/          _plans/          code + tests         specs à jour, plans supprimés
+                                       ↓
+                              /front-contract
+                          (contrat d'intégration)
+                               _front/
 ```
 
 ## Commandes
@@ -16,6 +20,7 @@ _specs/          _plans/          code + tests         specs à jour, plans supp
 | `/spec-driven:plan <ids>` | Traduit une ou plusieurs tâches de spec en plan technique détaillé dans `_plans/`. Décrit ce qui doit exister, sans écrire de code. S'exécute en mode plan. |
 | `/spec-driven:implement <ids\|plan>` | Réalise le code d'après le plan, écrit les tests des critères d'acceptation, puis met à jour les cases de la spec. |
 | `/spec-driven:review-workflow [plans…]` | Clôture le cycle : valide et coche les tâches réalisées, génère un résumé d'implémentation par section de spec, extrait les éléments transversaux vers `_specs/common.md`, puis supprime les plans après confirmation. Sans argument, traite tous les `_plans/*.md`. |
+| `/spec-driven:front-contract <spec> [ids…]` | Génère un contrat d'intégration frontend dans `_front/` à partir d'une spec et du code backend : endpoints, formats requête/réponse, auth, erreurs et règles métier. |
 
 ## Principes
 
