@@ -4,10 +4,12 @@ description: >-
   Génère un fichier Markdown dans `_front/` décrivant tout ce qu'un développeur
   frontend doit savoir pour intégrer un backend : endpoints, formats de
   requête/réponse, authentification, codes d'erreur et règles métier côté
-  serveur. Se base sur une spec (générée par `/spec`) et explore le code backend
-  pour compléter et valider les informations. À invoquer uniquement via
-  `/front-contract`, avec en argument le fichier de spec (ou la spec elle-même)
-  et optionnellement les identifiants de sections à traiter (ex. `1`, `1-1`).
+  serveur. À appeler sur un repo backend, idéalement après `/review-workflow`
+  (cycle spec-driven terminé) ou dès que la spec est stabilisée. Se base sur la
+  spec (générée par `/spec`) et explore le code backend pour valider et compléter
+  les informations. À invoquer uniquement via `/front-contract`, avec en argument
+  le fichier de spec (ou la spec elle-même) et optionnellement les identifiants
+  de sections à traiter (ex. `1`, `1-1`).
 disable-model-invocation: true
 ---
 

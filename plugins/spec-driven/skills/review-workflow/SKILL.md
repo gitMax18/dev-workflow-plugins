@@ -156,6 +156,11 @@ Dans cet ordre :
 
 Confirmer les modifications appliquées (fichiers mis à jour, plans supprimés).
 
+Si le dépôt est un backend exposant une API, proposer de lancer
+`/front-contract <spec> [ids]` pour générer le contrat d'intégration frontend
+dans `_front/` — utile pour communiquer les endpoints, formats et règles métier
+à une équipe frontend sans qu'elle ait à lire le code.
+
 ## Invariants
 
 - Ne jamais repasser une case `[x]` à `[ ]`.

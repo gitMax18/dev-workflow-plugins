@@ -28,8 +28,11 @@ plan (`_plans/`), puis met la spec à jour pour qu'elle reflète l'état réel.
 1. Le **code existant** du dépôt.
 2. Le **plan** (`_plans/<slug>.md`) — référence principale.
 3. La **spec** (`_specs/<slug>.md`) — besoin et critères d'acceptation.
-4. Les **conventions** du projet (`CLAUDE.md` ou `AGENTS.md`, patterns du dépôt).
-5. Les **bonnes pratiques** de la stack utilisée.
+4. **`_specs/common.md`** — éléments transversaux déjà livrés (types partagés,
+   middlewares, classes d'erreur communes…). Consulter avant de créer quoi que ce
+   soit qui pourrait y figurer.
+5. Les **conventions** du projet (`CLAUDE.md` ou `AGENTS.md`, patterns du dépôt).
+6. Les **bonnes pratiques** de la stack utilisée.
 
 En cas de conflit : le code existant prime sur les préférences personnelles ; le
 plan prime sur les suppositions ; toute incohérence est **signalée avant**
@@ -62,9 +65,6 @@ d'agir.
    d'erreur et les cas limites du plan. Pas de tests redondants.
 5. **Vérification** — build/compilation, tests verts, conformité aux conventions,
    couverture de toutes les étapes du plan.
-6. **Mise à jour de la spec** — une fois une tâche livrée **et testée**, cocher
-   sa case (`[x]`, identifiant `1-1`…) dans `_specs/<slug>.md`, **avec
-   confirmation** de l'utilisateur.
 
 ## Ambiguïtés
 
@@ -77,4 +77,3 @@ clarification avant d'implémenter. Ne jamais inventer un comportement métier.
 - Les tests couvrent les critères d'acceptation et passent.
 - Le code respecte les conventions et s'intègre naturellement au dépôt : un
   développeur du projet ne distingue pas les nouvelles modifications du reste.
-- Les cases correspondantes de la spec sont à jour.

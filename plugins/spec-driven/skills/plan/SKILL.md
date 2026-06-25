@@ -44,8 +44,10 @@ avoir à réinterpréter la spec.
 1. **Comprendre le besoin** — relire les fonctionnalités/tâches de spec ciblées,
    leurs règles métier et leurs critères d'acceptation.
 2. **Cartographier l'existant** — inspecter le code : architecture, modules,
-   conventions, mécanismes de persistance/test/communication. Ne jamais supposer
-   qu'un élément existe sans vérifier.
+   conventions, mécanismes de persistance/test/communication. Consulter aussi
+   `_specs/common.md` s'il existe : il recense les éléments transversaux déjà
+   livrés (types partagés, middlewares, classes d'erreur…) à réutiliser plutôt
+   qu'à recréer. Ne jamais supposer qu'un élément existe sans vérifier.
 3. **Identifier les concepts métier** — pour chacun : existe / à créer / à
    modifier.
 4. **Définir les flux** — nominal, cas d'erreur, cas limites, validations.

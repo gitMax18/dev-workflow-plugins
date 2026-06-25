@@ -36,12 +36,18 @@ réalise le code. Elle décrit le besoin, jamais la solution technique ni du cod
 
 ## Processus
 
-1. **Analyser** la demande et le contexte (specs et code existants).
+1. **Analyser** la demande et le contexte : specs existantes, code en place, et
+   `_specs/common.md` s'il existe (éléments transversaux déjà documentés — types
+   partagés, règles d'erreur communes, comportements établis). Les nouvelles
+   exigences ne doivent pas contredire ce qui y est déjà défini.
 2. **Clarifier** : poser des questions tant que des exigences ou des règles
    restent ambiguës. Ne pas produire de spec fondée sur des suppositions.
 3. **Rédiger** `_specs/<slug>.md` (slug en kebab-case) selon le gabarit.
 4. **Itérer** : l'utilisateur relit (commentaires dans le fichier ou via le
    prompt), tu ajustes, jusqu'à validation explicite.
+
+> Prochaine étape : `/plan <ids>` pour transformer les tâches de cette spec en
+> plan d'implémentation technique.
 
 ## Identifiants et traçabilité
 
