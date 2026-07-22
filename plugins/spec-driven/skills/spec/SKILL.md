@@ -7,6 +7,7 @@ description: >-
   tâches cochables à identifiants stables (1, 1-1, 1-2…) qui servent de fil
   conducteur jusqu'à l'implémentation. À invoquer uniquement via la commande
   `/spec`, avec la fonctionnalité à spécifier en argument.
+argument-hint: <fonctionnalité à spécifier> (obligatoire)
 disable-model-invocation: true
 ---
 
@@ -21,7 +22,9 @@ réalise le code. Elle décrit le besoin, jamais la solution technique ni du cod
 ## Invocation
 
 - Déclenchement **uniquement** via `/spec`. Ne pas s'activer autrement.
-- Argument : la fonctionnalité à spécifier (description libre).
+- Argument : la fonctionnalité à spécifier (description libre), **attendue et
+  obligatoire**. Si l'argument est absent ou vide, demander la description à
+  l'utilisateur avant de poursuivre — ne jamais démarrer une spec sans elle.
 - Hérite du modèle d'agent courant (aucun override).
 
 ## Principes

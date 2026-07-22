@@ -10,6 +10,7 @@ description: >-
   les informations. À invoquer uniquement via `/front-contract`, avec en argument
   le fichier de spec (ou la spec elle-même) et optionnellement les identifiants
   de sections à traiter (ex. `1`, `1-1`).
+argument-hint: <spec> [ids de sections à traiter] (optionnel, sinon toute la spec)
 disable-model-invocation: true
 ---
 

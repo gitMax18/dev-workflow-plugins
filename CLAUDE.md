@@ -38,6 +38,7 @@ plugins/<name>/
 |---|---|---|
 | `name` | yes | matches the directory name |
 | `description` | yes | primary triggering mechanism — used by Claude to decide when to invoke the skill |
+| `argument-hint` | no | hint shown to the user for the expected command argument(s), e.g. `<fonctionnalité à spécifier> (obligatoire)` |
 | `disable-model-invocation` | no | set to `true` to restrict the skill to explicit command invocation only (prevents auto-triggering) |
 
 ### Version sync rule

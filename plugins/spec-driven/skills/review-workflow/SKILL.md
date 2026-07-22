@@ -6,6 +6,7 @@ description: >-
   extrait les éléments transversaux vers `_specs/common.md`, puis supprime les
   plans après confirmation. À invoquer via `/review-workflow`, avec en argument les
   fichiers de plan à traiter (sinon, tous les `_plans/*.md`).
+argument-hint: [fichiers de plan à traiter] (optionnel, sinon tous les _plans/*.md)
 disable-model-invocation: true
 ---
 

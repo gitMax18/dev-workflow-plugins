@@ -7,6 +7,7 @@ description: >-
   flux, validations, tests) sans écrire de code, en s'ancrant dans la stack et
   les conventions réelles du dépôt. À invoquer uniquement via `/plan`, avec les
   identifiants de spec à planifier (1, 1-1, 2-1…). S'exécute en mode plan.
+argument-hint: <spec> <ids à planifier> (ou juste <ids> si la spec est déjà dans le contexte)
 disable-model-invocation: true
 ---
 
@@ -71,6 +72,8 @@ stack du dépôt, et assez détaillé pour qu'`/implement` n'ait **pas** à réa
 la spec.
 
 ## Gabarit de sortie (`_plans/<slug>.md`)
+
+> Le plan doit être enregistré dans ce fichier.
 
 ```markdown
 # Plan — <Titre>  (spec : <ids couverts, ex. 1-1, 1-2>)

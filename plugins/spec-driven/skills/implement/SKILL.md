@@ -4,9 +4,9 @@ description: >-
   Implémente fidèlement un plan d'implémentation (`_plans/`), dernière étape du
   cycle spec → plan → implémentation. Exécute le plan sans rien ajouter hors
   périmètre, s'intègre à la stack et aux conventions du dépôt, écrit les tests
-  des critères d'acceptation, puis met à jour les cases de la spec. À invoquer
-  uniquement via `/implement`, avec le plan ou les identifiants (1-1, 2-1…) à
-  réaliser.
+  des critères d'acceptation. À invoquer uniquement via `/implement`, avec le
+  plan ou les identifiants (1-1, 2-1…) à réaliser.
+argument-hint: <plan> (ou vide si le plan est déjà dans le contexte)
 disable-model-invocation: true
 ---
 
@@ -15,7 +15,7 @@ disable-model-invocation: true
 ## Rôle dans le cycle spec-driven
 
 Dernière étape de **spec → plan → implémentation**. Écrit le code qui réalise un
-plan (`_plans/`), puis met la spec à jour pour qu'elle reflète l'état réel.
+plan (`_plans/`).
 
 ## Invocation
 
