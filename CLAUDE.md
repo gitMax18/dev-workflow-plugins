@@ -53,15 +53,16 @@ Follows [SemVer](https://semver.org/lang/fr/): bump patch for fixes, minor for n
 
 ### `spec-driven`
 
-A five-step spec-driven development cycle. Each skill is command-only (`disable-model-invocation: true`):
+A six-step spec-driven development cycle. Each skill is command-only (`disable-model-invocation: true`):
 
 | Command | Output directory | Role |
 |---|---|---|
-| `/spec` | `_specs/` | Functional spec — the WHAT and WHY, never the HOW |
-| `/plan` | `_plans/` | Technical plan derived from spec — runs in plan mode |
+| `/spec` | `.claude/specs/` | Functional spec — the WHAT and WHY, never the HOW; starts with a quick review of existing code |
+| `/plan` | `.claude/plans/` | Technical plan derived from spec — runs in plan mode; looks for refactoring/simplification beyond the spec scope (deferred items go to `.claude/refactoring.md`) |
 | `/implement` | (code) | Implements the plan, checks off spec tasks |
-| `/review-workflow` | updates `_specs/`, deletes `_plans/` | Closes the cycle |
-| `/front-contract` | `_front/` | Frontend integration contract from spec + backend code |
+| `/recette` | `.claude/test/<spec>/` | Test plan (`recette-<scope>.md`) from spec + code, optionally played with Playwright on local environments only |
+| `/review-workflow` | updates `.claude/specs/`, deletes `.claude/plans/` | Closes the cycle |
+| `/front-contract` | `.claude/front/` | Frontend integration contract from spec + backend code |
 
 Task identifiers (`1`, `1-1`, `1-2`…) are stable across the full cycle — never renumbered, used as the traceability key from spec through to code.
 

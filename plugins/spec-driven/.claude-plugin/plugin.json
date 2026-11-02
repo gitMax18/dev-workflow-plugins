@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin.json",
   "name": "spec-driven",
-  "description": "Cycle spec-driven complet pour Claude Code : /spec définit le besoin fonctionnel, /plan le traduit en plan technique, /implement réalise le code, /review-workflow clôture le cycle (validation des specs, résumés, nettoyage des plans). Specs et plans versionnés dans _specs/ et _plans/.",
-  "version": "1.3.0",
+  "description": "Cycle spec-driven complet pour Claude Code : /spec définit le besoin fonctionnel (après revue du code existant), /plan le traduit en plan technique (refactoring/simplification inclus), /implement réalise le code, /recette génère et joue un plan de recette (Playwright, local uniquement), /review-workflow clôture le cycle (validation des specs, résumés, nettoyage des plans). Specs et plans versionnés dans .claude/specs/ et .claude/plans/.",
+  "version": "2.0.0",
   "author": {
     "name": "Maxime Jean",
     "email": "jean.maxime0988@gmail.com"
@@ -10,5 +10,5 @@
   "license": "MIT",
   "homepage": "https://github.com/gitMax18/dev-workflow-plugins/tree/main/plugins/spec-driven",
   "repository": "https://github.com/gitMax18/dev-workflow-plugins",
-  "keywords": ["spec-driven", "planning", "implementation", "workflow"]
+  "keywords": ["spec-driven", "planning", "implementation", "recette", "workflow"]
 }

@@ -1,7 +1,7 @@
 ---
 name: front-contract
 description: >-
-  Génère un fichier Markdown dans `_front/` décrivant tout ce qu'un développeur
+  Génère un fichier Markdown dans `.claude/front/` décrivant tout ce qu'un développeur
   frontend doit savoir pour intégrer un backend : endpoints, formats de
   requête/réponse, authentification, codes d'erreur et règles métier côté
   serveur. À appeler sur un repo backend, idéalement après `/review-workflow`
@@ -28,18 +28,22 @@ périmètre, puis plonge dans le code source pour extraire les détails réels.
 
 - Déclenchement **uniquement** via `/front-contract`. Ne pas s'activer autrement.
 - Arguments possibles :
-  - **`<fichier-spec>`** — chemin vers un fichier de spec (`_specs/auth.md`).
+  - **`<fichier-spec>`** — chemin vers un fichier de spec (`.claude/specs/auth.md`).
   - **`<identifiants>`** — un ou plusieurs identifiants de sections de la spec,
     séparés par des espaces (`1`, `1-1 1-2`, `2`). Limite le périmètre aux
     sections indiquées.
   - Sans argument : la spec peut être fournie directement dans le contexte de la
     conversation.
+- **Emplacements** : specs dans `.claude/specs/`, contrats dans `.claude/front/`. Si
+  `_specs/` ou `_front/` existent encore à la racine alors que le dossier
+  correspondant sous `.claude/` n'existe pas, le signaler et proposer de les
+  déplacer (`git mv`, avec confirmation) avant de poursuivre.
 
 **Exemples d'appel :**
 ```
-/front-contract _specs/auth.md
-/front-contract _specs/auth.md 1-1
-/front-contract _specs/auth.md 1-1 1-2 2
+/front-contract .claude/specs/auth.md
+/front-contract .claude/specs/auth.md 1-1
+/front-contract .claude/specs/auth.md 1-1 1-2 2
 ```
 
 ## Processus
@@ -76,12 +80,12 @@ fonctionnelles et règles métier** de la spec pour retrouver, dans le code :
 
 ### 3. Générer le fichier de contrat
 
-Créer (ou mettre à jour si le fichier existe déjà) le fichier dans `_front/`.
+Créer (ou mettre à jour si le fichier existe déjà) le fichier dans `.claude/front/`.
 
 **Nommage du fichier :**
-- Spec complète : `_front/<slug-de-la-spec>.md`
-- Sections ciblées : `_front/<slug-de-la-spec>-<identifiants>.md`
-  (ex. `_front/auth-1-1.md` pour la section `1-1` de `auth.md`)
+- Spec complète : `.claude/front/<slug-de-la-spec>.md`
+- Sections ciblées : `.claude/front/<slug-de-la-spec>-<identifiants>.md`
+  (ex. `.claude/front/auth-1-1.md` pour la section `1-1` de `auth.md`)
 
 ## Gabarit de sortie
 
@@ -92,7 +96,7 @@ numérotation de la spec), puis par endpoint si plusieurs.
 ```markdown
 # Contrat Frontend — <Titre de la spec> [sections X-Y si périmètre limité]
 
-> Généré depuis `_specs/<slug>.md` · sections : <liste ou "toutes">
+> Généré depuis `.claude/specs/<slug>.md` · sections : <liste ou "toutes">
 > Dernière mise à jour : <date ISO>
 
 ---
